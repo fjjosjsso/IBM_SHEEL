@@ -2,7 +2,7 @@
 DATE=$(date)
 PWD=$(pwd)
 USER_ID=$(id -u)
-TIMEZONE_INFO=$(/usr/share/zoneinfo/Asia)
+TIMEZONE_INFO=$(cd /usr/share/zoneinfo/Asia)
 
 echo "$DATE"
 echo "Present working directory: $PWD"
