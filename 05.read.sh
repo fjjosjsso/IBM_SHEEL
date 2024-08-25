@@ -1,8 +1,8 @@
 #!/bin/bash
 
 echo "Provide username"
-read USERNAME
+read -s USERNAME
 echo "Provide password"
-read PASSWORD
+read -s PASSWORD
 
 echo "$USERNAME:: $PASSWORD"
