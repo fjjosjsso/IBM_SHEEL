@@ -14,7 +14,6 @@ function check_pass_or_fail {
     then
         echo "You are topper"
     else
-    then
         echo "you are fail"
     fi
 }
