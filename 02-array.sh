@@ -10,3 +10,4 @@ echo "Print all names in array: ${my_array_names[*]}"
 echo "How many names are there: ${#my_array_names[*]}"
 
 echo "Print sakaray and sakare :${my_array_names[*]:2:2}"
+echo "Print sakaray and sakare :${my_array_names[*]:0:5}"
