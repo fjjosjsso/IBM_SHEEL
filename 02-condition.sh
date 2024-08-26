@@ -1,24 +1,8 @@
 #!/bin/bash
-read -p "Enter your Telugu marks" marks
-if [ $marks -gt 35 ]
+read -p "write your marks" marks
+if [ $marks -ge 35 ]
 then
-    echo "YOUR ARE PASS"
+    echo "You are pass"
 else
-    echo "YOUR ARE FAILD"
-fi
-
-read -p "Enter your English marks" English_marks
-if [ $marks -gt 35 ]
-then
-    echo "YOUR ARE PASS"
-else
-    echo "YOUR ARE FAILD"
-fi
-
-read -p "Enter your maths marks" Maths_marks
-if [ $marks -gt 35 ]
-then
-    echo "YOUR ARE PASS"
-else
-    echo "YOUR ARE FAILD"
+    echo "You are fail"
 fi
