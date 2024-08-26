@@ -1,6 +1,6 @@
 #!/bin/bash
 read -p "Write your interest in Sports" choose
-if [ $choose -et cricket ]
+if [ $choose == cricket ]
 then
     echo "This boy not elisible for other sports"
  else
