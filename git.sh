@@ -1,11 +1,12 @@
 #!/bin/bash
 
 USER_ID=$(id -u)
-if [ $USER_ID -ge 0 ]
+if [ $USER_ID -ne 0 ]
 then
     echo "Your not in root access:: Kindly get root access with sudo su -"
-    
+
 else
     echo "Your are in root access"
-    sudo yum install mysql -y
+    
 fi
+yum install mysql -y
