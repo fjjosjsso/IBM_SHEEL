@@ -11,3 +11,7 @@ echo "How many names are there: ${#my_array_names[*]}"
 
 echo "Print sakaray and sakare :${my_array_names[*]:2:2}"
 echo "Print sakaray and sakare :${my_array_names[*]:0:5}"
+UPPER_VALUES=${my_array_names^^}
+LOWER_VALUES=${my_array_names,,}
+
+echo "$UPEER_VALUES ::::: $LOWE_VALUES"
