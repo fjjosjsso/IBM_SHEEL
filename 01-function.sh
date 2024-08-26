@@ -11,8 +11,8 @@ fi
 read -p "Enter your Telugu marks" marks
 check
 
-read -p "Enter your English marks" English_marks
+read -p "Enter your English marks" marks
 check
 
-read -p "Enter your maths marks" Maths_marks
+read -p "Enter your maths marks" marks
 check
