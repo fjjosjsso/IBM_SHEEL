@@ -7,3 +7,6 @@ echo "20 ruppe note ${NUMBERS[1]}"
 
 echo "2000 note was not working ${NUMBERS[5]"
 
+echo "ALL NOTES ${NUMBER[*]}"
+
+
