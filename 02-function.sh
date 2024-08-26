@@ -16,7 +16,9 @@ function check_pass_or_fail {
     else
     then
         echo "you are fail"
+    fi
 }
+
 
 read -p "Enter your Telugu marks: " marks
 check_pass_or_fail
