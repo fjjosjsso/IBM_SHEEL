@@ -3,10 +3,9 @@
 USER_ID=$(id -u)
 if [ $USER_ID -ne 0 ]
 then
-    echo "Your not in root access:: Kindly get root access with sudo su -"
-
+    echo -e "\e[1:31m  Error:: Permission denied Kinly used with root access \e[0m"
 else
-    echo "Your are in root access"
-    
+    echo -e "e\1:32m  INFO:: Your are in root access \e[0m"
+    exit 1
 fi
-yum install mysql -y
+yum install git -y
