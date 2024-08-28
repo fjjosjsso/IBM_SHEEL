@@ -13,10 +13,10 @@ yum install git -y
 
 if [ $CHECK == 0 ]
 then
-    echo -e "\e[1;31m INSTALLING GIT SUCUSSES  \e[0m"
+    echo -e "\e[1;32m INSTALLING GIT SUCUSSES  \e[0m"
     exit 1
 else
-    echo -e "\e[1;32m INSTALLING GIT faild \e[0m"
+    echo -e "\e[1;31m INSTALLING GIT faild \e[0m"
 fi
 
 if [ $USER_ID -ne 0 ]
@@ -29,9 +29,9 @@ fi
 yum install postfixxxxx -y
 if [ $CHECK == 0 ]
 then
-    echo -e "\e[1;31m INSTALLING POSTFIX SUCUSSES \e[0m"
+    echo -e "\e[1;32m INSTALLING POSTFIX SUCUSSES \e[0m"
     exit 1
 else
-    echo -e "\e[1;32m INSTALLING POSTFIX  fail \e[0m"
+    echo -e "\e[1;31m INSTALLING POSTFIX  fail \e[0m"
 fi
 
