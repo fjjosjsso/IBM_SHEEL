@@ -9,4 +9,4 @@ else
     echo -e "\e[1;32m INFO:: Your are in root access \e[1;0m"
     
 fi
-sudo yum install mysql -y
+sudo yum install mysql-server -y
