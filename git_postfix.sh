@@ -11,7 +11,7 @@ else
 fi
 yum install git -y
 
-if [ $CHECK == 0 ]
+if [ $CHECK -et 0 ]
 then
     echo -e "\e[1;32m INSTALLING GIT SUCUSSES  \e[0m"
     exit 1
@@ -26,8 +26,8 @@ then
 else
     echo -e "\e[1:32m INFO::: You are in root access \e[0m"
 fi
-yum install postfixxxxx -y
-if [ $CHECK == 0 ]
+yum install postfix -y
+if [ $CHECK -et 0 ]
 then
     echo -e "\e[1;32m INSTALLING POSTFIX SUCUSSES \e[0m"
     exit 1
