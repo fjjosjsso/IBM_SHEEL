@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo -e "\e[1;31m This is Red colour \e[0m "
+echo -e "\e[3;31m This is Red colour \e[0m "
