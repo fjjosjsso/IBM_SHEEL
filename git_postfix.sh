@@ -26,7 +26,7 @@ then
 else
     echo -e "\e[1:32m INFO::: You are in root access \e[0m"
 fi
-yum install postfix -y
+yum install postfixx -y
 if [ $CHECK -ne 0 ]
 then
     echo -e "\e[1;31m INSTALLING POSTFIX FAILD \e[0m"
