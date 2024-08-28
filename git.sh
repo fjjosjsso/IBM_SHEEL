@@ -3,9 +3,9 @@
 USER_ID=$(id -u)
 if [ $USER_ID -ne 0 ]
 then
-    echo -e "\e[1:31m  Error:: Permission denied Kinly used with root access \e[0m"
+    echo -e "\e[1:31m Error:: Permission denied Kinly used with root access \e[0m"
 else
-    echo -e "e\1:32m  INFO:: Your are in root access \e[0m"
+    echo -e "e\1:32m INFO:: Your are in root access \e[0m"
     exit 1
 fi
 yum install git -y
