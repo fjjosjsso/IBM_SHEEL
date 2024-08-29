@@ -27,9 +27,9 @@ function check {
     fi
 }
 
-yum install git -y $>>$LOGFILE
+yum install git -y &>>$LOGFILE
 check $? "INSTALLING GIT "
 
-yum install postfix -y $>>$LOGFILE
+yum install postfix -y &>>$LOGFILE
 check $? "INSTALLING POSTFIX "
 
