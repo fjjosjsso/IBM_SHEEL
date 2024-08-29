@@ -10,7 +10,7 @@ while read line
 do 
 echo "Deleting $line &>>$LOGFILE"
 rm -rf $line
-done >>> $FILE_TO_DELETE
+done >>>$FILE_TO_DELETE
 
 
 
