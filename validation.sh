@@ -22,7 +22,7 @@ function validation {
 }
 yum list installed
 function app_check {
-    if [ $? -ne 0 ]
+    if [ $1 -ne 0 ]
     then
         echo -e "$R ..........INSTALLING $@ WAS NOT INSTALL $N"
     else 
