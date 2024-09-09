@@ -12,7 +12,7 @@ else
     echo -e "$G INFO::: YOUR ARE IN ROOT ACCESS $N"
 fi
 function validation {
-    if [ $1 -ne 0 ]
+    if [ $? -ne 0 ]
     then
         echo -e "$R ..........INSTALLING $@ WAS FAILED $N"
     else 
@@ -20,4 +20,4 @@ function validation {
     fi
 }
 yum install $@ -y 
-validation $? 
+validation $@ 
