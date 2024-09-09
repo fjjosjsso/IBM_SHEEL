@@ -20,3 +20,4 @@ function validation {
     fi
 }
 yum install $@ -y 
+validation 
