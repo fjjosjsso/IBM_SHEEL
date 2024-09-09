@@ -8,11 +8,11 @@ else
     echo -e "\e[32m INFO::: Your are in root access \e[0m"
 fi
 
-sudo yum install mysql -y
+sudo yum remove mysql -y
 
 if [ $? -ne 0 ]
 then
-    echo -e "\e[31m INSTALLING MYSQL WAS FAILED \e[0m"
+    echo -e "\e[31m REMOVING MYSQL WAS FAILED \e[0m"
 else
-    echo -e "\e[32m INSTALLING MYSQL WAS SUCESS \e[0m"
+    echo -e "\e[32m REMOVING MYSQL WAS SUCESS \e[0m"
 fi
