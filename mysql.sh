@@ -12,7 +12,6 @@ then
 
     echo -e "\e[31m Error::: Permission denied your are not in root \e[0m"
     exit 1
-else
     echo -e "\e[32m INFO::: Your are in root access \e[0m"
     fi
 fi
