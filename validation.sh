@@ -7,6 +7,7 @@ Y="\e[33m"
 if [ $USER_ID -ne 0 ]
 then
     echo -e "$R ERROR::: YOUR ARE NOT IN ROOT ACCESS KINLDY GET ROOT PERMISSION $N"
+    exit 1
 else
     echo -e "$G INFO::: YOUR ARE IN ROOT ACCESS $N"
 fi
