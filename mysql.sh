@@ -2,17 +2,17 @@
 usercheck=$(id -u)
 if [ $usercheck -ne 0 ]
 then
-    echo "Error::: Permission denied your are not in root"
+    echo -e "\e[31m Error::: Permission denied your are not in root \e[0m"
     exit 1
 else
-    echo "INFO::: Your are in root access"
+    echo " \e[32m INFO::: Your are in root access \e[0m"
 fi
 
 sudo yum install mysql -y
 
 if [ $? -ne 0 ]
 then
-    echo "INSTALLING MYSQL WAS SUCCESS"
+    echo "\e[31m INSTALLING MYSQL WAS FAILED \e[0m"
 else
-    echo "INSTALLING MYSQL WAS FAILED"
+    echo "\e[32m INSTALLING MYSQL WAS SUCESS \e[0m"
 fi
