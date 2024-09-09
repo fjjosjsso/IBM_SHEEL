@@ -1,6 +1,7 @@
 #!/bin/bash
 usercheck=$(id -u)
 if [ $usercheck -ne 0 ]
+then
         if [ $@ -eq "mongodb" ]
         then 
         sudo vi /etc/yum.repos.d/mongodb-org.repo
@@ -8,7 +9,7 @@ if [ $usercheck -ne 0 ]
         systemctl start mongod
         systemctl status mongod
         else
-then
+
     echo -e "\e[31m Error::: Permission denied your are not in root \e[0m"
     exit 1
 else
