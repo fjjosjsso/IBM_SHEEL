@@ -5,7 +5,7 @@ then
         if [ $@ -eq "mongodb" ]
         then 
         sudo vi /etc/yum.repos.d/mongodb-org.repo
-        yum install -y mongodb-org
+        yum install mongodb-org -y
         systemctl start mongod
         systemctl status mongod
         else
