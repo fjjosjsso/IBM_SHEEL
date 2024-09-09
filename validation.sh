@@ -16,5 +16,6 @@ function validation {
         echo -e "$R ..........INSTALLING $@ WAS FAILED $N"
     else 
         echo -e "$Y............INSTALLING $@ was SUCCESSFULL $N"
+    fi
 }
 yum install $@ -y 
