@@ -1,6 +1,6 @@
 #!/bin/bash
-user-id=$(id -u)
-if [ $user-id -ne 0 ]
+usercheck=$(id -u)
+if [ $usercheck -ne 0 ]
 then
     echo "Error::: Permission denied your are not in root"
     exit 1
