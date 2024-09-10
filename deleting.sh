@@ -5,7 +5,7 @@ SCRIPT_NAME=$0
 LOG_DIRECTORY=/home/centos/shellscript-logs
 LOGFILE=$LOG_DIRECTORY/$0-$DATE.log
 
-FILE_TO_BE_DELETE=$(find $APP_LOGS_DIRECTORY -name "*.log" -type f -mtime +14)
+FILE_TO_BE_DELETE=$(find $APP_LOGS_DIRECTORY -name "*.log" -type f -mtime +5)
 echo -e "\e[31m $FILE_TO_BE_DELETE \e[0m"
 
 while read line
