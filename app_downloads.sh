@@ -34,7 +34,7 @@ do
     if [ $? -ne 0 ]
     then
         echo -e "$R $@ WAS NOT INSTALLED KINDLY INSTALL $N"
-        yum install $@ -y &>> $LOGFILES
+        sudo yum install $@ -y &>> $LOGFILES
     else
         echo -e "$Y $@ WAS INSTALLED ALREDY $N"
     fi
