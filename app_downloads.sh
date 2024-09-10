@@ -32,10 +32,10 @@ function validation {
 for i in $@
 do
     yum list installed &>> $LOGFILES
-    if [ $? -ne 0 ]
+    if [ $i -ne 0 ]
     then
-        echo -e "$R $@ WAS NOT INSTALLED KINDLY INSTALL $N"
-        yum install $@ -y &>> $LOGFILES
+        echo -e "$R $i WAS NOT INSTALLED KINDLY INSTALL $N"
+        yum install $i -y &>> $LOGFILES
     else
         echo -e "$Y $@ WAS INSTALLED ALREDY $N"
     fi
