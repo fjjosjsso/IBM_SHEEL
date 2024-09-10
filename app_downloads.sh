@@ -1,7 +1,8 @@
 #!/bin/bash
 #LOGFILES SCRIPT FOR THAT WE NEED "DATE, LOGDIRECTORY=TO WHERE IT CAN BE STORE, SCRIPTNAME"
 DATE=$(date +%Y-%M-%D)
-LOG_DIRECTORY=/home/centos/file.log
+LOG_DIRECTORY=/root/shellscript.log
+
 SCRIPT_NAME=$0
 LOGFILES=$LOG_DIRECTORY/$SCRIPT_NAME-$DATE.log
 #COLOURS NOTATIONS
@@ -34,7 +35,7 @@ do
     if [ $? -ne 0 ]
     then
         echo -e "$R $@ WAS NOT INSTALLED KINDLY INSTALL $N"
-        sudo yum install $@ -y &>> $LOGFILES
+        yum install $@ -y &>> $LOGFILES
     else
         echo -e "$Y $@ WAS INSTALLED ALREDY $N"
     fi
