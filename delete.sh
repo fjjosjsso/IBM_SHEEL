@@ -1,6 +1,6 @@
 #!/bin/bash
 DATE=$(date +%Y//%M//%D)
-LOG_DIRECTORY=/home/centos/shellscript.log/
+LOG_DIRECTORY=/home/centos/shellscript.log
 SCRIPT_NAME=$0
 LOGFILE=$LOG_DIRECTORY/$SCRIPT_NAME-$DATE.log
 AAP_LOG_DIRECTORY=/home/centos/old.log
