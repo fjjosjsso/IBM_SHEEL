@@ -1,15 +1,19 @@
 #!/bin/bash
-APP_LOGS_DIRECTORY=/home/centos/app-logs
-DATE=$(date +%Y-%M-%D)
-SCRIPT_NAME=$0
-LOG_DIRECTORY=/home/centos/shellscript-logs/
-LOGFILE=$LOG_DIRECTORY/$0-$DATE.log
 
-FILE_TO_BE_DELETE=$(find $APP_LOGS_DIRECTORY -name "*.log" -type f -mtime +5)
-echo -e "\e[31m $FILE_TO_BE_DELETE \e[0m"
+APP_LOGS_DIR=/home/centos/app-logs
+
+DATE=$(date +%F:%H:%M:%S)
+LOGSDIR=/home/centos/shellscript-logs
+# /home/centos/shellscript-logs/script-name-date.log
+SCRIPT_NAME=$0
+LOGFILE=$LOGSDIR/$SCRIPT_NAME-$DATE.log
+
+FILES_TO_DELETE=$(find $APP_LOGS_DIR -name "*.log" -type f -mtime +14)
+
+echo "script started executing at $DATE" &>>$LOGFILE
 
 while read line
-do 
-    echo -e "\e[34m $line" &>>$LOGFILE
-    rm -rf $line 
-done <<< $FILE_TO_BE_DELETE
+do
+    echo "Deleting $line" &>>$LOGFILE
+    rm -rf $line
+done <<< $FILES_TO_DELETE
