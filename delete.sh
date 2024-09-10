@@ -8,10 +8,10 @@ AAP_LOG_DIRECTORY=/home/centos/old.log
 FILE_TO_BE_DELETE=$(find $AAP_LOG_DIRECTORY -type f -name "*.log" -mtime +8)
 echo -e "\e[31m $FILE_TO_BE_DELETE \e[0m"
 
-echo -e "\e[33m Exection time and date $DATE \e[0m" &>>$LOGFILE
+#echo -e "\e[33m Exection time and date $DATE \e[0m" &>>$LOGFILE
 while read line
 do
-    echo "Deleting $line" &>>$LOGFILE
+    echo "Deleting $line" &>> $LOGFILE
     rm -rf $line
 done <<< $AAP_LOG_DIRECTORY
 
