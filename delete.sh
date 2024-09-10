@@ -11,7 +11,7 @@ echo -e "\e[31m $FILE_TO_BE_DELETE \e[0m"
 #echo -e "\e[33m Exection time and date $DATE \e[0m" &>>$LOGFILE
 while read line
 do
-    echo "Deleting $line" &>> $LOGFILE
+    echo "Deleting $line" &>>$LOGFILE
     rm -rf $line
 done <<< $AAP_LOG_DIRECTORY
 
