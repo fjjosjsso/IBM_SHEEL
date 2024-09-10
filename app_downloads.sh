@@ -15,7 +15,7 @@ USER_ID=$(id -u)
 if [ $USER_ID -ne 0 ]
 then
     echo -e "$R ERROR::: YOUR PERMISSION DENIED YOUR ARE NOT IN ROOT ACCESS $N"
-    exit 1
+    
 else
     echo -e "$G INFO::: YOUR ARE ROOT ACCESS $N"
 fi
