@@ -13,7 +13,7 @@ while read line
 do
     echo "Deleting $line" &>>$LOGFILE
     rm -rf $line
-done >>> $AAP_LOG_DIRECTORY
+done <<< $AAP_LOG_DIRECTORY
 
 
 
