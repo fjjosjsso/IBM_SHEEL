@@ -10,6 +10,6 @@ echo -e "\e[31m $FILE_TO_BE_DELETE \e[0m"
 
 while read line
 do 
-    echo -e "\e[34m $line" &> $LOGFILE
+    echo -e "\e[34m $line" &2> $LOGFILE
     rm -rf $line 
 done <<< $FILE_TO_BE_DELETE
