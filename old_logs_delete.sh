@@ -8,11 +8,11 @@ LOGFILE=$LOGSDIR/$SCRIPT_NAME-$DATE.log
 
 FILE_TO_DELETE=$(find $APP_LOGS_DIRECTORY -name "*.log" -type f -mtime +14)
 
-echo "DELETING FILE WILL BE $FILE_TO_DELETE" &>>$LOGFILE
+echo "DELETING EXECTION TIME AND DATE:- $DATE" &>>$LOGFILE
 
 while read line
 do
-    echo -e "\e[33m    DELETING LOGS $LINE \e[0m" &>>$LOGFILE
+    echo -e "\e[33m DELETING LOGS $line \e[0m" &>>$LOGFILE
     rm -rf $line &>>$LOGFILE
 done <<< $FILE_TO_DELETE
 
